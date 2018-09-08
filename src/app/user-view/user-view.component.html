@@ -1,0 +1,12 @@
+
+<header></header>
+<footer></footer>
+
+
+
+<h2>List of the books</h2>
+<ul *ngFor="let book of books">
+    <li>{{book.name}}</li>
+</ul>
+Book name:<input [(ngModel)]="bookName"><br>
+<button (click)="addBooks()">Add</button>

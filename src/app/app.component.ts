@@ -8,3 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Online-Test';
 }
+export class book{
+  id: number;
+  name: String;
+
+}
