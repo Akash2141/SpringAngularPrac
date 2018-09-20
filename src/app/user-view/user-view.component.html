@@ -1,12 +1,19 @@
 
 <header></header>
 <footer></footer>
+<hr>
+Book name:<input [(ngModel)]="bookName"><br><br>
+<button (click)="addBooks()">Add</button>&nbsp;
+<button (click)="getBooks()">Updated List</button><br><br><hr>
 
+Book id:<input [(ngModel)]="id"><br><br>
+<button (click)="deleteBook()">Delete Book</button><br><br><hr>
 
-
+Book id:<input [(ngModel)]="delId"><br><br>
+Book name:<input [(ngModel)]="delBookName"><br><br>
+<button (click)="upBooks()">Update Book</button>
+<br><br><hr>
 <h2>List of the books</h2>
-<ul *ngFor="let book of books">
-    <li>{{book.name}}</li>
-</ul>
-Book name:<input [(ngModel)]="bookName"><br>
-<button (click)="addBooks()">Add</button>
+<div *ngFor="let book of books">
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{book.id}}.&nbsp;&nbsp;{{book.name}}</h5>
+</div>
